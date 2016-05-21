@@ -185,13 +185,13 @@ def main():
 
     old_data = []
     if os.path.exists(opts.meta):
-        with open(opts.meta, 'r') as f:
+        with open(opts.meta, 'r', encoding='utf-8') as f:
             old_data = f.read().split('\n')
 
     new_logs = list(set(results) - set(old_data))
 
     if new_logs:
-        with open(opts.meta, 'a') as f:
+        with open(opts.meta, 'a', encoding='utf-8') as f:
             # we append old file, need to add new line
             if old_data:
                 f.write('\n')
