@@ -4,6 +4,11 @@ Tenhou.net doesn't store more than 40 your last games.
 To prevent it, this script will store locally all your games logs
 from tenhou.net server.
 
+Supported logs locations:
+1. Chrome flash files (linux, mac os, windows)
+2. FireFox flash files (linux)
+3. Standalone windows client
+
 In future this script will send logs to my statistics server.
 
 Script optionally support logs content downloading, to use it add -d flag
